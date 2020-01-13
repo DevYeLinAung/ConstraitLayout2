@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/vert"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Our Team"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <ImageView
+        android:id="@+id/img_a"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_team" />
+
+    <ImageView
+        android:id="@+id/img_b"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:background="@drawable/b"
+        app:layout_constraintCircle="@id/img_a"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:background="@drawable/c"
+        app:layout_constraintCircle="@id/img_b"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/adams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Adams G"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_a" />
+
+    <TextView
+        android:id="@+id/betty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betty L"
+        android:textColor="#000000"
+        app:layout_constraintCircle="@id/adams"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laura W"
+        android:textColor="#000000"
+        app:layout_constraintCircle="@id/betty"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_exe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Executive Officer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adams" />
+
+    <TextView
+        android:id="@+id/txt_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketing"
+        app:layout_constraintCircle="@id/txt_exe"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Analyst"
+        app:layout_constraintCircle="@id/txt_mark"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_d"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/d"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_exe" />
+
+    <ImageView
+        android:id="@+id/img_e"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:background="@drawable/e"
+        app:layout_constraintCircle="@id/img_d"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:background="@drawable/f"
+        app:layout_constraintCircle="@id/img_e"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/miller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Miller W"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_d" />
+
+    <TextView
+        android:id="@+id/kevin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kevin John"
+        android:textColor="#000000"
+        app:layout_constraintCircle="@id/miller"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robets"
+        android:textColor="#000000"
+        app:layout_constraintCircle="@id/kevin"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_ux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:text="UX Designer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/miller" />
+
+    <TextView
+        android:id="@+id/txt_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Developer"
+        app:layout_constraintCircle="@id/txt_ux"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Dev"
+        app:layout_constraintCircle="@id/txt_web"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mission"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_web" />
+
+    <TextView
+        android:id="@+id/txt_du"
+        android:layout_width="370dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Duis tellus metus, elementum a lectus id, aliquet interdum mauris.
+Nam bibendum efficitur sollicitudin. Proin eleifend libero velit,nec fringilla dolor finibus
+quis.nMorbi eu libero pellentesque,rutrum metus quis,blandit est,Fusce bibendum accumsan
+nisi vulputate feugiat.In fermentum laoreet euismod.Praesent sem nisl,facillsis eget odio at,
+rhoncus scelerisque ipsum.Nulla orci dui, dignissim a risus ut,lobortis porttitor velit."
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mission" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nulla id lectus metus. Maecenas a lorem in odio auctor facilisis
+non vitae nunc.Sed malesuada volupat massa.Praesent sit amet lacinia augue"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_du" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
